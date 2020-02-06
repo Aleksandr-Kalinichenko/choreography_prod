@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route,Switch,Redirect} from 'react-router-dom'
+import Layout from './hoc/Layout/Layout'
+import News from './containers/News/News'
+import About from './components/About/About'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+
+  render(){
+    return(
+      <Layout>
+<Switch>
+<Route path="/" component={News} exact/>
+<Route path="/About" component={About} exact/>
+  {/* <Route path="/News-creator" component={QuizCreator} exact/> */}
+  {/* <Route path="/Quiz" component={Quiz}/> */}
+  <Redirect to={'/'}/>
+</Switch>
+      </Layout>
+    )
+  }
 }
 
 export default App;
