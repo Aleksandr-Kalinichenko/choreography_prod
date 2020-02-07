@@ -1,52 +1,15 @@
 import React from 'react'
 import classes from './News.module.css'
-class News extends React.Component{
+import Axios from 'axios'
+import swal from 'sweetalert';
 
+class News extends React.Component{
     state={
-        News:[{
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
+        News:[
         {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
-        },
-        {
-            Title:"название новости",
-            Img:"/img",
-            description:"какое то описание"
+            Title:"Идет загрузка новостей..",
+            Img:'https://i.gifer.com/VAyR.gif',
+           Description:null
         }]
     }
 
@@ -54,19 +17,48 @@ class News extends React.Component{
 return(
     this.state.News.map((New,index)=>{
         return(
-            <div key={index} className={classes.NewsDiv+ " col-xl-3 col-ms-12"}>
+            <div key={index} className="container-fluid">
+                <div className="row">
+            <div  className={classes.NewsDiv+ " col-xl-6 col-12 offset-xl-3"}>
             <h1>{New.Title}</h1>
-            <h1>{New.Img}</h1>
-            <h1>{New.description}</h1></div>
-
+            <p>{New.Description}</p>
+            <img className="img-fluid" src={New.Img} alt=""/>
+            </div></div></div>
         )
     })
 )
     }
+
+componentDidMount = async()=>{
+let data=[];
+const News=[];
+try{  const response = await Axios.get('https://choreography-4f442.firebaseio.com/News.json');
+        data = response.data
+            
+        }catch(e){
+            console.log(e)
+            swal("Данные не получены,проблема с сервером , зайдите позже", {
+                icon: "warning",
+              }); }
+Object.keys(data).forEach((key,index)=>{
+News.push({
+    Title:data[key].Title,
+    Img:data[key].Img,
+    Description:data[key].Description,
+})
+})
+this.setState({News})
+}
 render(){
 return(
+
     <div className={classes.News +" container-fluid"}>
-<div className="row new_row offset-xl-2">{this.RenderNewsHandler()}</div>
+<h1 className="offset-xl-7">Новини</h1>    
+
+<div className="row">
+    
+{this.RenderNewsHandler()}
+</div>
     </div>
 )
 }

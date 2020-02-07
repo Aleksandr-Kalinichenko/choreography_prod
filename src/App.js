@@ -3,7 +3,8 @@ import {Route,Switch,Redirect} from 'react-router-dom'
 import Layout from './hoc/Layout/Layout'
 import News from './containers/News/News'
 import About from './components/About/About'
-
+import NewsCreator from './containers/NewsCreator/NewsCreator';
+import Galery from './containers/Galery/Galery'
 class App extends React.Component{
 
   render(){
@@ -12,8 +13,8 @@ class App extends React.Component{
 <Switch>
 <Route path="/" component={News} exact/>
 <Route path="/About" component={About} exact/>
-  {/* <Route path="/News-creator" component={QuizCreator} exact/> */}
-  {/* <Route path="/Quiz" component={Quiz}/> */}
+<Route path="/News-creator" component={NewsCreator} exact/>
+<Route path="/Galery" component={Galery}/>
   <Redirect to={'/'}/>
 </Switch>
       </Layout>
