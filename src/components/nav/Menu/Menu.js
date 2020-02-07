@@ -13,8 +13,8 @@ const Menu = props =>{
     }else{
         cls.push('fa-bars')
     }
-    return(<div>
-       <h1 onClick={props.onToggle} className={cls.join(' ')}>&nbsp;&nbsp;&nbsp;Навигация </h1></div>
+    return(
+       <i onClick={props.onToggle} className={cls.join(' ')}></i>
     )
 }
 

@@ -1,0 +1,11 @@
+
+.NewsDiv{
+    /* background: rgba(88,41,41,.3); */
+    background: rgba(0, 0, 0,.45);
+    padding: 20px;
+    color: #fff;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 200px;
+    box-sizing: border-box;
+}

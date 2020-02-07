@@ -7,7 +7,7 @@
     max-width: 300px;
     padding: 20px 10px;
     box-sizing: border-box;
-    background: #fff;
+    background: transparent;
     z-index: 90;
     transform: translateX(0px);
     transition: transform .22s ease-in;
@@ -17,6 +17,7 @@
 }
 
 .Drawer ul{
+
     list-style:none;
     margin: 0;
     padding: 0;
@@ -28,14 +29,14 @@
 }
 
 .Drawer ul li a{
-    color:#363f54;
+    color:white;
     font-size: 30px;
     text-decoration: none;
-    background-color: #fff;
+    background: transparent;
     position: relative;
     padding: 0px 20px 10px 20px;
     transition: opacity .3s;
 }
 .Drawer ul li .active{
-opacity: .7;
+color:orange;
 }

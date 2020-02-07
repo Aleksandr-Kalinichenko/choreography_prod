@@ -1,5 +1,5 @@
 .Menu {
-position: absolute;
+position: fixed;
     top: 40px;
     left: 40px;
     font-size: 20px;
@@ -16,9 +16,3 @@ position: absolute;
 .Menu.open {
     left: 320px;
 }
-@media (max-width: 600px) {
-
-.MenuToggle{
-position: absolute;
-}
-  }
