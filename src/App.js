@@ -5,6 +5,9 @@ import News from './containers/News/News'
 import About from './components/About/About'
 import NewsCreator from './containers/NewsCreator/NewsCreator';
 import Galery from './containers/Galery/Galery'
+import QuizList from './containers/QuizList/QuizList'
+import Quiz from './containers/Quiz/Quiz'
+
 class App extends React.Component{
 
   render(){
@@ -12,9 +15,13 @@ class App extends React.Component{
       <Layout>
 <Switch>
 <Route path="/" component={News} exact/>
-<Route path="/About" component={About} exact/>
-<Route path="/News-creator" component={NewsCreator} exact/>
+<Route path="/About" component={About} />
+<Route path="/News-creator" component={NewsCreator} />
 <Route path="/Galery" component={Galery}/>
+<Route path="/QuizList"  component={QuizList}/>
+<Route path="/Quiz/:id" component={Quiz}/>
+
+
   <Redirect to={'/'}/>
 </Switch>
       </Layout>

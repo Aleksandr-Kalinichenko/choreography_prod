@@ -14,10 +14,21 @@ class Layout extends React.Component{
       })
     }
     MenuToggleHandler =()=>{
-    this.setState({
-      menu:!this.state.menu
-    })
+      this.setState({
+        menu:!this.state.menu
+      })
     }
+
+    componentDidMount(){
+      document.addEventListener("keydown", ev=>{
+        if(ev.keyCode === 27 || ev.keyCode === 9) {
+          this.setState({
+           menu:!this.state.menu
+          })
+        }
+      });
+    }
+   
 render(){
     return(
         <div className={classes.Layout}>

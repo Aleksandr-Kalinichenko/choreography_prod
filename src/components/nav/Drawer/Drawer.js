@@ -4,10 +4,10 @@ import Backdrop from '../../UI/Backdrop/Backdrop'
 import {NavLink} from 'react-router-dom'
 const links =[
   {to:'/',label:'Новини',exact:true,},
-  {to:'/Galery',label:'Галерея',exact:true,},
-  {to:'/',label:'Біблиотека',exact:true,},
-  {to:'/',label:'Тести',exact:true,},
-  {to:'/News-creator',label:'NewsAdd',exact:true,},
+  {to:'/Galery',label:'Галерея'},
+  {to:'/',label:'Біблиотека'},
+  {to:'/QuizList',label:'Тести'},
+  {to:'/News-creator',label:'NewsAdd'},
 
 
 ]
