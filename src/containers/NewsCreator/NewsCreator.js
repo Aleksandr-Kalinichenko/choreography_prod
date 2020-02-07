@@ -7,14 +7,14 @@ class NewsCreator extends React.Component{
     state={
         Img:undefined,
         Title:undefined,
-        description:undefined,
+        Description:undefined,
         Galery:undefined
     }
 sendServerHandler = async()=>{
     const data ={
         Img:this.state.Img,
         Title:this.state.Title,
-        description:this.state.description
+        Description:this.state.Description
     }
     try{
     const response = await Axios.post('https://choreography-4f442.firebaseio.com/News.json',data)
@@ -53,9 +53,11 @@ swal("Данные загружены на сервер", {
     }}
     onSubmitHandler= (event)=>{
         event.preventDefault()
-        if(this.state.Title & this.state.Img & this.state.description){
+       
+        if(this.state.Title!==undefined & this.state.Img!==undefined & this.state.Description!==undefined){
             this.sendServerHandler();
-        console.log(this.state)}else{
+       }else{
+
             console.log(this.state)
             swal({
                 text : "Вы уверены что хотите отправить данные с незаполнеными полями?",

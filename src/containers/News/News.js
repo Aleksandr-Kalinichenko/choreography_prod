@@ -9,7 +9,7 @@ class News extends React.Component{
         {
             Title:"Идет загрузка новостей..",
             Img:'https://i.gifer.com/VAyR.gif',
-           Description:null
+            Description:null
         }]
     }
 
