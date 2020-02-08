@@ -11,7 +11,7 @@ export default class QuizList extends Component{
         logined:false,
     }
     renderQuizes(){
-        return[1,2,3].map((quiz,index)=>{
+        return[1].map((quiz,index)=>{
             return(
                 <li
                 key={index}

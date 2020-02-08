@@ -13,25 +13,141 @@ class Quiz extends Component {
     answerState: null, // { [id]: 'success' 'error' }
     quiz: [[],[
       {
-        question: 'Какого цвета небо?',
+        question: '1.	Жанри танцю',
         rightAnswerId: 2,
         id: 1,
         answers: [
-          {text: 'Черный', id: 1},
-          {text: 'Синий', id: 2},
-          {text: 'Красный', id: 3},
-          {text: 'Зеленый', id: 4}
+          {text: 'а) ліричний', id: 1},
+          {text: 'б) класичний', id: 2},
+          {text: 'в) народно-сценічний', id: 3},
         ]
       },
       {
-        question: 'В каком году основали Санкт-Петербург?',
+        question: '2.	Загальні форми для народних танців',
         rightAnswerId: 3,
         id: 2,
         answers: [
-          {text: '1700', id: 1},
-          {text: '1702', id: 2},
-          {text: '1703', id: 3},
-          {text: '1803', id: 4}
+          {text: 'а) варіація', id: 1},
+          {text: 'б) хоровод', id: 2},
+          {text: 'в) вальс', id: 3},
+        ]
+      },
+      {
+        question: '3.	Види хореографічного мистецтва',
+        rightAnswerId: 2,
+        id: 3,
+        answers: [
+          {text: 'а) пляска', id: 1},
+          {text: 'б) народно-сценічний', id: 2},
+          {text: 'в) хоровод', id: 3},
+        ]
+      },{
+        question: '4.	Частина драматургічної побудови танцю',
+        rightAnswerId: 2,
+        id: 4,
+        answers: [
+          {text: 'а) тема', id: 1},
+          {text: 'б) надзавдання', id: 2},
+          {text: 'в) розвиток дії', id: 3},
+        ]
+      },{
+        question: '5.	Складова частина ідейно-тематичного аналізу',
+        rightAnswerId: 2,
+        id: 5,
+        answers: [
+          {text: 'а) експозиція', id: 1},
+          {text: 'б) ідея', id: 2},
+          {text: 'в) кульмінація', id: 3},
+        ]
+      },{
+        question: '6.	Виразні засоби танцю',
+        rightAnswerId: 2,
+        id: 6,
+        answers: [
+          {text: 'а) танець за записом', id: 1},
+          {text: 'б) композиційний план', id: 2},
+          {text: 'в) хореографічний текст', id: 3},
+        ]
+      },{
+        question: '7.	Хореографічний текст',
+        rightAnswerId: 2,
+        id: 7,
+        answers: [
+          {text: 'а) малюнок', id: 1},
+          {text: 'б) бігунець', id: 2},
+          {text: 'в) мелодія', id: 3},
+        ]
+      },{
+        question: '8.	Частина композиційного плану',
+        rightAnswerId: 2,
+        id: 8,
+        answers: [
+          {text: 'а) розв`язка', id: 1},
+          {text: 'б) лібрето', id: 2},
+          {text: 'в) розвиток дії', id: 3},
+        ]
+      },{
+        question: '9.	Види пляски',
+        rightAnswerId: 2,
+        id: 9,
+        answers: [
+          {text: 'а) па-де-де', id: 1},
+          {text: 'б) масова', id: 2},
+          {text: 'в) композиція', id: 3},
+        ]
+      },{
+        question: '10.	Форма побудови кадрилі',
+        rightAnswerId: 2,
+        id: 10,
+        answers: [
+          {text: 'а) квадратна', id: 1},
+          {text: 'б) лірична', id: 2},
+          {text: 'в) драматична', id: 3},
+        ]
+      },{
+        question: '11.	Тема танцю',
+        rightAnswerId: 2,
+        id: 11,
+        answers: [
+          {text: 'а) те що автор стверджує', id: 1},
+          {text: 'б) те про що йде мова', id: 2},
+          {text: 'в) авторська позиція', id: 3},
+        ]
+      },{
+        question: '12.	Видатний педагог в галузі народного танцю',
+        rightAnswerId: 2,
+        id: 12,
+        answers: [
+          {text: 'а) Ваганова А.Я.', id: 1},
+          {text: 'б) Ткаченко Т.С.', id: 2},
+          {text: 'в) Тарасов М. І.', id: 3},
+        ]
+      },{
+        question: '13.	Нові варіанти хореографічного руху створюються за допомогою',
+        rightAnswerId: 2,
+        id: 13,
+        answers: [
+          {text: 'а) малюнку', id: 1},
+          {text: 'б) притупу', id: 2},
+          {text: 'в) костюму', id: 3},
+        ]
+      },{
+        question: '14.	Малюнок танцю залежить від',
+        rightAnswerId: 2,
+        id: 14,
+        answers: [
+          {text: 'а) костюму', id: 1},
+          {text: 'б) задуму', id: 2},
+          {text: 'в) настрою', id: 3},
+        ]
+      },{
+        question: '15.	Запис танцю містить',
+        rightAnswerId: 2,
+        id: 15,
+        answers: [
+          {text: 'а) графічний малюнок', id: 1},
+          {text: 'б) композиційний план ', id: 2},
+          {text: 'в) значення термів', id: 3},
         ]
       }]
     ]
