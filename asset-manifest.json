@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/choreography_prod/static/css/main.43a25665.chunk.css",
-    "main.js": "/choreography_prod/static/js/main.c35ef06e.chunk.js",
-    "main.js.map": "/choreography_prod/static/js/main.c35ef06e.chunk.js.map",
-    "runtime-main.js": "/choreography_prod/static/js/runtime-main.63edaf53.js",
-    "runtime-main.js.map": "/choreography_prod/static/js/runtime-main.63edaf53.js.map",
-    "static/js/2.4d64300f.chunk.js": "/choreography_prod/static/js/2.4d64300f.chunk.js",
-    "static/js/2.4d64300f.chunk.js.map": "/choreography_prod/static/js/2.4d64300f.chunk.js.map",
-    "index.html": "/choreography_prod/index.html",
-    "precache-manifest.8c5667587bcd6e626d550e92f0607f83.js": "/choreography_prod/precache-manifest.8c5667587bcd6e626d550e92f0607f83.js",
-    "service-worker.js": "/choreography_prod/service-worker.js",
-    "static/css/main.43a25665.chunk.css.map": "/choreography_prod/static/css/main.43a25665.chunk.css.map",
-    "static/js/2.4d64300f.chunk.js.LICENSE.txt": "/choreography_prod/static/js/2.4d64300f.chunk.js.LICENSE.txt",
-    "static/media/News.module.css": "/choreography_prod/static/media/3.6d4dd64b.jpg",
-    "static/media/Quiz.module.css": "/choreography_prod/static/media/1.af5638a7.jpg"
+    "main.css": "/static/css/main.c5f83197.chunk.css",
+    "main.js": "/static/js/main.a3a92b6a.chunk.js",
+    "main.js.map": "/static/js/main.a3a92b6a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6daaa2b4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6daaa2b4.js.map",
+    "static/js/2.4d64300f.chunk.js": "/static/js/2.4d64300f.chunk.js",
+    "static/js/2.4d64300f.chunk.js.map": "/static/js/2.4d64300f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.58daa615baae3c470d12ea94c4c694eb.js": "/precache-manifest.58daa615baae3c470d12ea94c4c694eb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c5f83197.chunk.css.map": "/static/css/main.c5f83197.chunk.css.map",
+    "static/js/2.4d64300f.chunk.js.LICENSE.txt": "/static/js/2.4d64300f.chunk.js.LICENSE.txt",
+    "static/media/News.module.css": "/static/media/3.6d4dd64b.jpg",
+    "static/media/Quiz.module.css": "/static/media/1.af5638a7.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.63edaf53.js",
+    "static/js/runtime-main.6daaa2b4.js",
     "static/js/2.4d64300f.chunk.js",
-    "static/css/main.43a25665.chunk.css",
-    "static/js/main.c35ef06e.chunk.js"
+    "static/css/main.c5f83197.chunk.css",
+    "static/js/main.a3a92b6a.chunk.js"
   ]
 }
