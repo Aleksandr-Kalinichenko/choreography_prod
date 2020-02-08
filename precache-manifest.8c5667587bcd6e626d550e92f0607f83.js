@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8d87ec776eac11dd0fc942d557650ab",
+    "revision": "c805f76183f9ed001dcad69cbe83a0a2",
     "url": "/choreography_prod/index.html"
   },
   {
-    "revision": "7ba7918f63248f53fea5",
-    "url": "/choreography_prod/static/css/main.120b3d52.chunk.css"
+    "revision": "e050ef3ea913e3910320",
+    "url": "/choreography_prod/static/css/main.43a25665.chunk.css"
   },
   {
     "revision": "714fa9bcd6142573c051",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/choreography_prod/static/js/2.4d64300f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ba7918f63248f53fea5",
-    "url": "/choreography_prod/static/js/main.91b12853.chunk.js"
+    "revision": "e050ef3ea913e3910320",
+    "url": "/choreography_prod/static/js/main.c35ef06e.chunk.js"
   },
   {
     "revision": "ca652ba2163a28bbe2db",
