@@ -132,6 +132,7 @@ componentDidMount(){
           {
             this.state.isFinished
              ? <FinishedQuiz
+                  Name = {this.props.location.state}
                   results={this.state.results}
                   quiz={this.state.quiz[this.props.match.params.id]}
                   onRetry={this.retryHandler}

@@ -4,14 +4,38 @@
     padding-top: 100px;
     flex-grow: 1;
     width: 100%;
-    background: linear-gradient(90deg, #5041b2 0%, #7969e6 100%);
+    background:url('../QuizList/1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .Quiz h1 {
-    color: #fff;
-    margin-left: 10px;
+    color:black;
 }
 
 .QuizWrapper {
     width: 600px;
+}
+@media (max-width:1700px) {
+
+    .Quiz{
+        background:none;    
+
+    }
+
+}
+@media (max-width:360px) {
+
+    .Quiz{
+        background:url('../QuizList/1.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat; 
+
+    }
+    .Quiz h1 {
+        color:#fff;
+    background: rgba(0, 0, 0, .12);
+    }
+    
+
 }

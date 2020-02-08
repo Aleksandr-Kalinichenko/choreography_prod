@@ -4,6 +4,7 @@ import Button from '../UI/Button/Button'
 import { Link } from 'react-router-dom'
 
 const FinishedQuiz = props => {
+
   const successCount = Object.keys(props.results).reduce((total, key) => {
     if (props.results[key] === 'success') {
       total++
@@ -15,6 +16,9 @@ const FinishedQuiz = props => {
 
   return (
     <div className={classes.FinishedQuiz}>
+      <h4>Имя : {props.Name.data.Name}</h4>
+      <h4>E-Mail : {props.Name.data.Email}</h4>
+
       <ul>
         { props.quiz.map((quizItem, index) => {
           const cls = [
@@ -41,7 +45,7 @@ const FinishedQuiz = props => {
       <div>
         <Button onClick={props.onRetry} type="primary">Повторить</Button>
         <Link to="/">
-        <Button  type="success">Перейти в список тестов</Button></Link>
+        <Button  type="success">На главную</Button></Link>
       </div>
     </div>
   )

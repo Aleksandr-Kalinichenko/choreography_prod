@@ -25,7 +25,7 @@ Galery.push(
 )
 })
 this.setState({
-    Galery
+    Galery:Galery.reverse()
 })
 }
 
@@ -33,7 +33,7 @@ RenderPhoto=()=>{
     return(
         this.state.Galery.map((data,index)=>{
             return(
-                <div key={index} className={classes.GaleryBorderImage+ " col-xl-6 offset-xl-3 col-12 col-lg-6 offest-lg-3"}>
+                <div key={index} className={classes.GaleryBorderImage+ " col-xl-6 offset-xl-3 col-12 col-md-6 offset-md-3 col-lg-6 offest-lg-3"}>
                 <img src={data} alt=""  className="img-fluid" ></img></div>
             )
         })

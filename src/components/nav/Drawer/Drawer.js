@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 const links =[
   {to:'/',label:'Новини',exact:true,},
   {to:'/Galery',label:'Галерея'},
-  {to:'/',label:'Біблиотека'},
+  {to:'/Biblio',label:'Біблиотека'},
   {to:'/QuizList',label:'Тести'},
   {to:'/News-creator',label:'NewsAdd'},
 

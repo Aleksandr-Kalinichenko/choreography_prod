@@ -53,14 +53,13 @@ swal("Добро пожаловать "+this.state.Name, {
     render(){
         return(
             this.state.logined ? 
-            <div className={classes.QuizList+ " container-fluid"}>
-                <div className="row">
-                <h1 className="col-12">Список тестів:</h1>
+            <div className={classes.QuizList+" container-fluid"}>
+                <h1>Список тестів:</h1>
+
+                <div className={classes.TestBlock+ "  col-lg-4 offset-lg-4 col-xl-4 offset-xl-4"}>
                 <ul>
                 {this.renderQuizes()}
-                </ul>
-               
-                </div>
+                </ul></div>
             </div> :  <AboutStudent
                 onButtonPress={this.onButtonPress}
                 OnChangeTextName={this.OnChangeTextName}

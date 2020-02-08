@@ -1,10 +1,12 @@
 .FinishedQuiz {
     padding: 20px;
-    color: #fff;
-    border: 2px solid #fff;
+    color: black;
+    border: 2px solid black;
     border-radius: 5px;
     box-sizing: border-box;
     margin: 0 10px;
+    background: rgba(255,255,255,.7);
+
 }
 
 .FinishedQuiz ul {
