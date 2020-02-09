@@ -13,7 +13,7 @@ class Quiz extends Component {
     answerState: null, // { [id]: 'success' 'error' }
     quiz: [[],[
       {
-        question: '1.	Жанри танцю',
+        question: 'Жанри танцю',
         rightAnswerId: 2,
         id: 1,
         answers: [
@@ -23,7 +23,7 @@ class Quiz extends Component {
         ]
       },
       {
-        question: '2.	Загальні форми для народних танців',
+        question: 'Загальні форми для народних танців',
         rightAnswerId: 3,
         id: 2,
         answers: [
@@ -33,7 +33,7 @@ class Quiz extends Component {
         ]
       },
       {
-        question: '3.	Види хореографічного мистецтва',
+        question: 'Види хореографічного мистецтва',
         rightAnswerId: 2,
         id: 3,
         answers: [
@@ -42,7 +42,7 @@ class Quiz extends Component {
           {text: 'в) хоровод', id: 3},
         ]
       },{
-        question: '4.	Частина драматургічної побудови танцю',
+        question: 'Частина драматургічної побудови танцю',
         rightAnswerId: 2,
         id: 4,
         answers: [
@@ -51,7 +51,7 @@ class Quiz extends Component {
           {text: 'в) розвиток дії', id: 3},
         ]
       },{
-        question: '5.	Складова частина ідейно-тематичного аналізу',
+        question: 'Складова частина ідейно-тематичного аналізу',
         rightAnswerId: 2,
         id: 5,
         answers: [
@@ -60,7 +60,7 @@ class Quiz extends Component {
           {text: 'в) кульмінація', id: 3},
         ]
       },{
-        question: '6.	Виразні засоби танцю',
+        question: 'Виразні засоби танцю',
         rightAnswerId: 2,
         id: 6,
         answers: [
@@ -69,7 +69,7 @@ class Quiz extends Component {
           {text: 'в) хореографічний текст', id: 3},
         ]
       },{
-        question: '7.	Хореографічний текст',
+        question: 'Хореографічний текст',
         rightAnswerId: 2,
         id: 7,
         answers: [
@@ -78,7 +78,7 @@ class Quiz extends Component {
           {text: 'в) мелодія', id: 3},
         ]
       },{
-        question: '8.	Частина композиційного плану',
+        question: 'Частина композиційного плану',
         rightAnswerId: 2,
         id: 8,
         answers: [
@@ -87,7 +87,7 @@ class Quiz extends Component {
           {text: 'в) розвиток дії', id: 3},
         ]
       },{
-        question: '9.	Види пляски',
+        question: 'Види пляски',
         rightAnswerId: 2,
         id: 9,
         answers: [
@@ -96,7 +96,7 @@ class Quiz extends Component {
           {text: 'в) композиція', id: 3},
         ]
       },{
-        question: '10.	Форма побудови кадрилі',
+        question: 'Форма побудови кадрилі',
         rightAnswerId: 2,
         id: 10,
         answers: [
@@ -105,7 +105,7 @@ class Quiz extends Component {
           {text: 'в) драматична', id: 3},
         ]
       },{
-        question: '11.	Тема танцю',
+        question: 'Тема танцю',
         rightAnswerId: 2,
         id: 11,
         answers: [
@@ -114,7 +114,7 @@ class Quiz extends Component {
           {text: 'в) авторська позиція', id: 3},
         ]
       },{
-        question: '12.	Видатний педагог в галузі народного танцю',
+        question: 'Видатний педагог в галузі народного танцю',
         rightAnswerId: 2,
         id: 12,
         answers: [
@@ -123,7 +123,7 @@ class Quiz extends Component {
           {text: 'в) Тарасов М. І.', id: 3},
         ]
       },{
-        question: '13.	Нові варіанти хореографічного руху створюються за допомогою',
+        question: 'Нові варіанти хореографічного руху створюються за допомогою',
         rightAnswerId: 2,
         id: 13,
         answers: [
@@ -132,7 +132,7 @@ class Quiz extends Component {
           {text: 'в) костюму', id: 3},
         ]
       },{
-        question: '14.	Малюнок танцю залежить від',
+        question: 'Малюнок танцю залежить від',
         rightAnswerId: 2,
         id: 14,
         answers: [
@@ -141,7 +141,7 @@ class Quiz extends Component {
           {text: 'в) настрою', id: 3},
         ]
       },{
-        question: '15.	Запис танцю містить',
+        question: 'Запис танцю містить',
         rightAnswerId: 2,
         id: 15,
         answers: [
@@ -214,7 +214,7 @@ class Quiz extends Component {
   }
 
   isQuizFinished() {
-    return this.state.activeQuestion + 1 === this.state.quiz.length
+    return this.state.activeQuestion + 1 === this.state.quiz[this.props.match.params.id].length
   }
 
   retryHandler = () => {
@@ -255,9 +255,9 @@ componentDidMount(){
                 />
              : <ActiveQuiz
                 answers={this.state.quiz[this.props.match.params.id][this.state.activeQuestion].answers}
-                question={this.state.quiz[this.state.activeQuestion].question}
+                question={this.state.quiz[this.props.match.params.id][this.state.activeQuestion].question}
                 onAnswerClick={this.onAnswerClickHandler}
-                quizLength={this.state.quiz.length}
+                quizLength={this.state.quiz[this.props.match.params.id].length}
                 answerNumber={this.state.activeQuestion + 1}
                 state={this.state.answerState}
               />

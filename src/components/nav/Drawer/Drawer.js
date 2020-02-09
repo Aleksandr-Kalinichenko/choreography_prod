@@ -7,7 +7,9 @@ const links =[
   {to:'/Galery',label:'Галерея'},
   {to:'/Biblio',label:'Біблиотека'},
   {to:'/QuizList',label:'Тести'},
-  {to:'/News-creator',label:'NewsAdd'},
+  {to:'/About',label:'Про автора'},
+
+//   {to:'/News-creator',label:'NewsAdd'},
 
 
 ]
