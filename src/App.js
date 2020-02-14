@@ -8,6 +8,8 @@ import Galery from './containers/Galery/Galery'
 import QuizList from './containers/QuizList/QuizList'
 import Quiz from './containers/Quiz/Quiz'
 import Biblio from './containers/Biblio/Biblio'
+import Video from './containers/Video/Video'
+
 class App extends React.Component{
 
   render(){
@@ -21,7 +23,7 @@ class App extends React.Component{
 <Route path="/QuizList"  component={QuizList}/>
 <Route path="/Quiz/:id" component={Quiz}/>
 <Route path="/Biblio" component={Biblio}/>
-
+<Route path="/Video" component={Video}/>
   <Redirect to={'/'}/>
 </Switch>
       </Layout>

@@ -1,0 +1,18 @@
+.Video{
+    background: url('./1.jpg');
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-attachment: fixed;
+    align-items: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: 100%;
+}
+
+.Video iframe{
+margin-bottom: 140px;
+border:2px solid white;
+border-radius: 15px;
+
+}

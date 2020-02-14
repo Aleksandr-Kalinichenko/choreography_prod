@@ -14,7 +14,7 @@ class Quiz extends Component {
     quiz: [[],[
       {
         question: 'Жанри танцю',
-        rightAnswerId: 2,
+        rightAnswerId: 1,
         id: 1,
         answers: [
           {text: 'а) ліричний', id: 1},
@@ -24,7 +24,7 @@ class Quiz extends Component {
       },
       {
         question: 'Загальні форми для народних танців',
-        rightAnswerId: 3,
+        rightAnswerId: 2,
         id: 2,
         answers: [
           {text: 'а) варіація', id: 1},
@@ -43,7 +43,7 @@ class Quiz extends Component {
         ]
       },{
         question: 'Частина драматургічної побудови танцю',
-        rightAnswerId: 2,
+        rightAnswerId: 3,
         id: 4,
         answers: [
           {text: 'а) тема', id: 1},
@@ -61,7 +61,7 @@ class Quiz extends Component {
         ]
       },{
         question: 'Виразні засоби танцю',
-        rightAnswerId: 2,
+        rightAnswerId: 3,
         id: 6,
         answers: [
           {text: 'а) танець за записом', id: 1},
@@ -97,7 +97,7 @@ class Quiz extends Component {
         ]
       },{
         question: 'Форма побудови кадрилі',
-        rightAnswerId: 2,
+        rightAnswerId: 1,
         id: 10,
         answers: [
           {text: 'а) квадратна', id: 1},
@@ -142,7 +142,7 @@ class Quiz extends Component {
         ]
       },{
         question: 'Запис танцю містить',
-        rightAnswerId: 2,
+        rightAnswerId: 1,
         id: 15,
         answers: [
           {text: 'а) графічний малюнок', id: 1},
@@ -243,7 +243,7 @@ componentDidMount(){
   
       <div className={classes.Quiz}>
         <div className={classes.QuizWrapper}>
-          <h1>Ответьте на все вопросы</h1>
+          <h1>Відповідайте на питання</h1>
 
           {
             this.state.isFinished

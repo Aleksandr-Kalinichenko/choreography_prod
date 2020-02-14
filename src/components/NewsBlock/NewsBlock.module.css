@@ -3,9 +3,11 @@
     /* background: rgba(88,41,41,.3); */
     background: rgba(0, 0, 0,.45);
     padding: 20px;
-    color: #fff;
+    color:black;
     border: 5px solid #fff;
     border-radius: 5px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     box-sizing: border-box;
+    background-color: rgba(255,255,255,.7)
+
 }
